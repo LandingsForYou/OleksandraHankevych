@@ -135,3 +135,23 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Refined full-bleed desktop portrait and quiet mobile navigation */
+@media (min-width: 701px) {
+  .hero { position: relative; isolation: isolate; }
+  .hero__layout { position: relative; z-index: 1; grid-template-columns: minmax(0, 1fr); }
+  .hero__copy { max-width: min(720px, 58%); position: relative; z-index: 2; }
+  .hero__portrait { position: absolute; inset: 0 calc(-1 * var(--gutter)); padding: 0; z-index: -1; overflow: hidden; }
+  .hero__portrait-frame { height: 100%; min-height: 100%; background: var(--cream); }
+  .hero__portrait-frame img { object-position: center 29%; }
+  .hero__portrait-frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--cream) 0%, rgba(249,224,202,.98) 24%, rgba(249,224,202,.84) 43%, rgba(249,224,202,.22) 69%, rgba(249,224,202,0) 100%); }
+  .hero__portrait-caption { display: none; }
+  .hero__footer { position: relative; z-index: 2; }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .hero__copy { max-width: 64%; }
+  .hero__portrait-frame img { object-position: 58% 28%; }
+}
+@media (max-width: 900px) {
+  .mobile-nav__inner > a:not(.mobile-nav__contact) { font-size: clamp(17px, 4vw, 22px); padding: 13px 0; border-bottom: 0; }
+}
