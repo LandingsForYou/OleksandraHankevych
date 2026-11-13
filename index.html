@@ -4,71 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#F9E0CA">
-  <meta name="description" content="Олександра Ганкевич — кандидатка психологічних наук, психологиня та гештальт-терапевтка. Індивідуальні консультації та терапія для пар у Києві й онлайн.">
-  <meta name="keywords" content="психолог Київ, психолог онлайн, гештальт терапевт Київ, психолог для пар, консультація психолога онлайн">
+  <meta name="description" content="Психолог, гештальт-терапевт і кандидат психологічних наук. Індивідуальна терапія та робота з парами. Онлайн та офлайн у Києві. Тривога, стосунки, життєві кризи.">
+  <meta name="keywords" content="психолог Київ, психотерапевт Київ, психолог онлайн, гештальт терапевт, психолог для пар, сімейний психолог, терапія стосунків, консультація психолога онлайн, психолог Україна, терапія тривоги, психолог стосунки">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Олександра Ганкевич — психолог у Києві та онлайн">
-  <meta property="og:description" content="Простір для розуміння себе, своїх почуттів і стосунків.">
-  <title>Психолог у Києві та онлайн | Олександра Ганкевич</title>
+  <meta property="og:title" content="Олександра Ганкевич — психолог, психотерапевт у Києві та онлайн">
+  <meta property="og:description" content="Допомагаю розібратися у стосунках, собі та своєму житті м’яко і глибоко.">
+  <title>Психолог, психотерапевт у Києві та онлайн | Олександра Ганкевич — стосунки, тривога, терапія для пар, гештальт-терапія</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти до вмісту</a>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="arrow-long" viewBox="0 0 72 18"><path d="M1 9h68M61 1l8 8-8 8" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+
   <header class="site-header" id="top">
-    <div class="container header-inner">
+    <div class="site-header__inner container">
       <a class="brand" href="#top" aria-label="Олександра Ганкевич — на головну">
-        <span class="brand-name">Олександра<br>Ганкевич<span class="brand-dot">.</span></span>
-        <span class="brand-caption">Психологиня · Київ / онлайн</span>
+        <span class="brand__name">Олександра <span>Ганкевич</span></span>
+        <span class="brand__descriptor">ПСИХОЛОГ · ГЕШТАЛЬТ-ТЕРАПЕВТ</span>
       </a>
       <nav class="desktop-nav" aria-label="Основна навігація">
         <a href="#about">Про мене</a>
-        <a href="#approach">Напрями роботи</a>
+        <a href="#approach">З чим допомагаю</a>
         <a href="#pricing">Вартість</a>
         <a href="#contacts">Контакти</a>
       </nav>
-      <a class="header-cta" href="https://t.me/OleksandraHankevych" target="_blank" rel="noopener noreferrer">Записатися <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span><span></span>
+      <a class="header-contact" href="https://t.me/OleksandraHankevych" target="_blank" rel="noopener noreferrer">
+        <span>Записатися</span><svg class="arrow arrow--header" aria-hidden="true"><use href="#arrow-long"/></svg>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Відкрити меню">
+        <span></span><span></span><span></span>
       </button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Мобільна навігація" inert>
-      <a href="#about">Про мене</a>
-      <a href="#approach">Напрями роботи</a>
-      <a href="#pricing">Вартість</a>
-      <a href="#contacts">Контакти</a>
-      <a class="mobile-contact" href="https://t.me/OleksandraHankevych" target="_blank" rel="noopener noreferrer">Записатися на консультацію ↗</a>
+      <div class="mobile-nav__inner container">
+        <a href="#about">Про мене</a>
+        <a href="#approach">З чим допомагаю</a>
+        <a href="#pricing">Вартість</a>
+        <a href="#contacts">Контакти</a>
+        <a class="mobile-nav__contact" href="https://t.me/OleksandraHankevych" target="_blank" rel="noopener noreferrer">Записатися на консультацію <svg class="arrow" aria-hidden="true"><use href="#arrow-long"/></svg></a>
+        <span class="mobile-nav__note">Київ · Онлайн</span>
+      </div>
     </nav>
   </header>
+
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="eyebrow"><span class="eyebrow-line"></span> ПСИХОЛОГІЧНА ПІДТРИМКА · КИЇВ / ОНЛАЙН</div>
-          <h1 id="hero-title">Місце, де можна <em>бути собою.</em></h1>
-          <p class="hero-lead">Олександра Ганкевич</p>
-          <p class="hero-credentials">Кандидатка психологічних наук<br>Психологиня · Гештальт-терапевтка · Системна розстановниця</p>
-          <p class="hero-description">Допомагаю краще розуміти себе, виходити з болісних сценаріїв і будувати стосунки, у яких є місце вашим потребам.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="https://t.me/OleksandraHankevych" target="_blank" rel="noopener noreferrer">Записатися на консультацію <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#about">Познайомитися ближче <span aria-hidden="true">↓</span></a>
+      <div class="hero__layout container">
+        <div class="hero__copy">
+          <p class="hero__eyebrow reveal"><span class="hero__eyebrow-line" aria-hidden="true"></span> ПСИХОЛОГ У КИЄВІ ТА ОНЛАЙН</p>
+          <h1 class="hero__title reveal">Олександра<br><span class="hero__title-last">Ганкевич<span class="hero__title-period">.</span></span></h1>
+          <p class="hero__subtitle reveal">Допомагаю розібратися у <em>стосунках, собі</em> та своєму житті м’яко і глибоко</p>
+          <div class="hero__details reveal">
+            <p class="hero__qualification">Кандидат психологічних наук<br>Психолог · Гештальт-терапевт · Системний розстановник</p>
+            <p class="hero__description">Допомагаю краще розуміти себе, виходити з болісних сценаріїв і будувати стосунки, у яких є місце вашим потребам.</p>
           </div>
-          <div class="hero-footnote"><span class="footnote-line"></span><span>Індивідуальна терапія та консультації для пар</span></div>
+          <div class="hero__actions reveal">
+            <a class="primary-link" href="https://t.me/OleksandraHankevych" target="_blank" rel="noopener noreferrer"><span>Записатися на консультацію</span><svg class="arrow" aria-hidden="true"><use href="#arrow-long"/></svg></a>
+            <span class="hero__format">Індивідуальна терапія<br>та консультації для пар</span>
+          </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-image-wrap">
-            <img class="hero-image" src="img/oleksandra-hankevych.jpg" alt="Олександра Ганкевич — психологиня та гештальт-терапевтка" fetchpriority="high" width="928" height="1654">
+        <div class="hero__portrait reveal reveal--image">
+          <div class="hero__portrait-frame">
+            <img src="img/oleksandra-hankevych.jpg" width="928" height="1654" alt="Олександра Ганкевич сидить у кріслі" fetchpriority="high">
           </div>
-          <div class="hero-image-caption"><span>01 / ЗНАЙОМСТВО</span><span>З турботою про ваш внутрішній світ</span></div>
-          <span class="hero-decor" aria-hidden="true">OH<span>✳</span></span>
+          <span class="hero__portrait-caption">ОЛЕКСАНДРА ГАНКЕВИЧ <span>© ПСИХОЛОГІЧНА ПРАКТИКА</span></span>
         </div>
       </div>
-      <div class="hero-bottom container"><span>ПРОСТІР ДЛЯ ВАШИХ ЗМІН</span><span>ГОРТАЙТЕ ВНИЗ <span aria-hidden="true">↓</span></span></div>
+      <div class="hero__footer container">
+        <span>ПРОСТІР, ДЕ МОЖНА БУТИ СОБОЮ</span>
+        <span class="hero__scroll">ГОРТАЙТЕ НИЖЧЕ <svg class="arrow arrow--down" aria-hidden="true"><use href="#arrow-long"/></svg></span>
+      </div>
     </section>
-    <!-- Наступні секції додамо на наступному етапі. Навігаційні посилання поки ведуть до майбутніх розділів. -->
+    <!-- Наступні секції з ТЗ будуть додані окремо після погодження Header і Hero. -->
   </main>
 </body>
 </html>
