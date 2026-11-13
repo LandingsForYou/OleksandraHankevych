@@ -1,0 +1,1 @@
+Place the supplied portrait in this folder as `oleksandra-hankevych.jpg`. The image is not yet uploaded to GitHub.
