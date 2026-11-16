@@ -444,9 +444,9 @@ main {
     display: block;
     position: absolute;
     inset: 100% 0 auto;
-    background: rgba(255, 248, 242, 0.82);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    background: #fff8f2;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     border-bottom: 1px solid var(--line);
     opacity: 0;
     visibility: hidden;
@@ -2895,4 +2895,18 @@ body.education-dialog-open {
   .contact-footer { padding-top: 0; }
   .contact-footer__layout { padding-top: 270px; }
   .contact-footer__bottom { margin-top: 58px; }
+}
+
+/* Precisely centered close icon: both diagonals share one pivot. */
+@media (max-width: 900px) {
+  .menu-toggle { position: relative; display: block; padding: 0; width: 50px; height: 45px; }
+  .menu-toggle span { position: absolute; right: 7px; top: 50%; height: 1.5px; margin: 0; transform-origin: center; transition: width .3s, transform .3s, opacity .2s; }
+  .menu-toggle span:nth-child(1) { width: 35px; transform: translateY(-7px); }
+  .menu-toggle span:nth-child(2) { width: 25px; transform: translateY(-.75px); }
+  .menu-toggle span:nth-child(3) { width: 15px; transform: translateY(6px); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(1),
+  .menu-toggle[aria-expanded="true"] span:nth-child(3) { width: 30px; right: 10px; }
+  .menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(-50%) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; transform: translateY(-50%); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-50%) rotate(-45deg); }
 }
